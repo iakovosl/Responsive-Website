@@ -8,6 +8,20 @@
     box-sizing: border-box;
 }
 
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: "Lato", "Arial", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    top: 0px;
+    left: 0px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+
 /* -------------------------------------------------- */
 /* NAVBAR*/
 /* -------------------------------------------------- */
@@ -47,13 +61,13 @@
     height:50px;
 }
     
-#headlogo {
+.headlogo {
     position: absolute;
+    width:60px;
+    height:60px;
+   
     top: 26px;
     left: 72px;
-    width: 72px;
-    height: 72px;
-    background: transparent url('img/logo.svg') 0% 0% no-repeat padding-box;
     opacity: 1;
     z-index: 1;
 }
@@ -68,56 +82,23 @@
     padding:5px 10px;
 }
 
+.spelling { 
+   border-bottom: 6px solid var(--unnamed-color-b4ff00);
+   border-bottom: 10px solid #B4FF00;
+   opacity: 1;
+}
+
 .hero-text-box {
     position: absolute;
-    top: 448px;
-    left: 252px;
-    width: 576px;
-    height: 120px;
-    text-align: left;
-    font: normal normal 800 100px/122px Montserrat;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    font: normal normal 800 20px/30px Montserrat;
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
 }
-
-.spelling { 
- top: 584px;
- left: 252px;
- width: 96px;
- height: 0px;
- border-bottom: 16px solid var(--unnamed-color-b4ff00);
- border-bottom: 16px solid #B4FF00;
- opacity: 1;
- 
-}
-
-.spelling-nav { 
-    
-    top: 584px;
-    left: 252px;
-    width: 96px;
-    height: 0px;
-    border-bottom: 16px solid var(--unnamed-color-b4ff00);
-    border-bottom: 16px solid #B4FF00;
-    padding-bottom: 15px;
-    opacity: 1;
-    
-   }
-
-.hero-text-box p{
-    margin-top: 40px;
-    top: 656px;
-    left: 252px;
-    width: 576px;
-    height: 170px;
-    text-align: left;
-    font: normal normal 800 30px/40px Montserrat;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
-}
-
 
 
 /* Make the image fully responsive */
@@ -126,52 +107,241 @@
     height: 100%;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-#headlogo {
-    position: relative;
-    top: 8px;
-    left: 24px;
-    opacity: 1;
-    margin-bottom: 10px;
-  }
+/* -------------------------------------------------- */
+/* SECTION 2*/
+/* -------------------------------------------------- */
+
+.steps-box:first-child {
+    text-align: right;
+    padding-right:1%;
+    margin-top: 90px;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .hero-text-box  {
-        position: absolute;
-        top: 50px;
-        left: 25px;
-        width: 312px;
-        height: 107px;
-        text-align: left;
-        font: normal normal 800 18px/24px Montserrat;
-        letter-spacing: 0px;
-        color: #FFFFFF;
-        opacity: 1;
-      }
-    }
+.steps-box:last-child {
+    padding-left: 3%;
+    margin-top: 70px;
+}
 
-    /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .hero-text-box p {
+.app-screen {
+    width: 70%;
+}
+
+.works-step {
+    margin-bottom: 50px;
+}
+
+.works-step p{
+    position: relative;
+    font-size: small;
+    top: 40px;
+    left: 20px;
+    width: 300px;
+    height: 32px;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1
+}
+
+.works-step h6{
+    position: relative;
+    font-size: small;
+    text-align: left;
+    top: 30px;
+    left: 20px;
+    width: 256px;
+    height: 15px;
+    letter-spacing: 0px;
+    color: #CFCFCF;
+    opacity: 1;
+}
+
+.works-step h5{
+    position: relative;
+    font-size: medium;
+    top: 30px;
+    left: 20px;
+    width: 256px;
+    height: 15px;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+
+/* -------------------------------------------------- */
+/* SECTION 3*/
+/* -------------------------------------------------- */
+
+.pop-art-love{
+    width: 50%;
+    position: absolute;
+    left: 50px;
+}
+
+#smallerTitle{
+    position: absolute;
+    font-size: small;
+    top: 30px;
+    left: 300px;
+    width: 256px;
+    height: 15px;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #CFCFCF;
+    opacity: 1;
+}
+
+#title{
+    position: absolute;
+    font-size: medium;
+    top: 55px;
+    left: 300px;
+    width: 256px;
+    height: 15px;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+.works-step-2 h6{
+    position: absolute;
+    font-size: small;
+    text-align: left;
+    top: 30px;
+    left: 300px;
+    width: 256px;
+    height: 15px;
+    letter-spacing: 0px;
+    color: #CFCFCF;
+    opacity: 1;
+}
+
+.works-step-2 h5{
+    position: absolute;
+    font-size: medium;
+    top: 55px;
+    left: 300px;
+    width: 256px;
+    height: 15px;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+.works-step-2 p{
+    position: absolute;
+    font-size: small;
+    top: 90px;
+    left: 300px;
+    width: 300px;
+    height: 32px;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1
+}
+
+.steps-box-2:first-child {
+    text-align: right;
+    padding-right:1%;
+    margin-top: 90px;
+}
+
+.steps-box-2:last-child {
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.works-step {
+    margin-bottom: 50px;
+}
+
+
+
+/* -------------------------------------------------- */
+/* RESPONSIVE*/
+/* -------------------------------------------------- */
+/* Big tablet to 1200px (widths smaller taht the 1140px row) */
+@media only screen and (max-width: 1200px) {
+    .hero-text-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+    
+    .row { padding: 0 2%; }
+}
+
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+    body { font-size: 18px; }
+    section { padding: 60px 0; }
+    
+    
+    .steps-box { margin-top: 10px; }
+    .steps-box:last-child { margin-top: 10px; }
+    .works-steps { margin-bottom: 40px; }
+
+    .works-step p { margin-bottom: 100px;}
+    
+ 
+    .works-step:last-of-type { margin-bottom: 60px; }
+    
+    .app-screen { width: 100%; }
+    
+    
+}
+
+
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+    body { font-size: 16px; }
+    section { padding: 30px 0; }
+    
+    .row,
+    .hero-text-box { padding: 0 4%; }
+    .col { 
+        width: 100%;
+        margin: 0 0 4% 0;
+    }
+    
+    h1 { font-size: 180%; }
+    h2 { font-size: 150%; }
    
-        top: 232px;
-        left: 25px;
-        width: 312px;
-        height: 107px;
-        text-align: left;
-        font: normal normal 800 18px/24px Montserrat;
-        letter-spacing: 0px;
-        color: #FFFFFF;
-        opacity: 1;
-      }
-    }
+    
+    .app-screen { width: 100%; margin-top: -15%;}
+    .pop-art-love { width: 70%; margin-top: -50px; }
+    .steps-box:first-child { text-align: center; }
+   
+    
+    .works-step p { margin-bottom: 100px;}
+ 
+    .works-step-2 p { margin-top: 250px; position:absolute; top: 200px; left: 25px;}
+    .works-step-2 h6 { position: absolute; left: 40px; top: 350px; font-size: 120%;}
+    .works-step-2 h5 { position: absolute; left: 40px; top: 400px;font-size: 180%;}
+
+    .headlogo { position: relative; top: 8px; left: 24px; opacity: 1; margin-bottom: 10px;}
+ 
+}
+
+
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+    section { padding: 25px 0; }
+  
+}
+
+
+
+
+
 
   
   
-  
-  
-  
+
   

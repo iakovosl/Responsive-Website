@@ -14,20 +14,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Responsive website</title>
-
 </head>
 
 <body>
     <header>
-
         <nav class="navbar navbar-expand-md navbar-dark">
-
-            <div id="headlogo"><img src="img/logo.svg"></div>
+            <img src="img/logo.svg" class="headlogo" />
             <!-- Toggler/collapsibe Button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <!-- Navbar links -->
             <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
                 <ul class="navbar-nav">
@@ -53,8 +49,6 @@
             </div>
         </nav>
 
-
-
         <!-- Carousel -->
         <div id="demo" class="carousel slide" data-ride="carousel">
 
@@ -70,22 +64,56 @@
                 <div class="carousel-item active">
                     <div class="hero-text-box">
                         <h1><span class="spelling">S.</span>und Co</h1>
-                        <p>To take a trivial example, which of us ever undertakes laborious physical exercise, except to
-                            obtain some advantage from it?</p>
+                        <p style="margin-top: 40px;">To take a trivial example, which of <br> us ever undertakes
+                            laborious <br>physical exercise, except to
+                            obtain <br>some advantage from it?</p>
                     </div>
                     <img src="img/background.png" alt="Los Angeles" width="1100" height="500">
                 </div>
-                <div class="carousel-item">
-                    <img src="img/background.png" alt="Chicago" width="1100" height="500">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/background.png" alt="New York" width="1100" height="500">
+            </div>
+        </div>
+    </header>
+    <section class="section-steps">
+
+        <div class="row">
+            <div class="col-md-6 steps-box">
+                <img src="img/6cfa2f3aca711cdcdb097435682f9555-510x638@2x.png" alt="" class="app-screen">
+            </div>
+            <div class="col-md-6 steps-box">
+                <div class="works-step">
+                    <h6>Since the 1500s</h6>
+                    <h5>The standard</h5>
+
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt.</p>
                 </div>
 
             </div>
-            
         </div>
-    </header>
+    </section>
+
+    <section class="section-steps">
+
+        <div class="row">
+
+            <div class="col-md-6 steps-box">
+                <div class="works-step-2">
+                    <h6>Since the 1500s</h6>
+                    <h5>The standard</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 steps-box">
+                <img src="img/pop-art-love-cushion-46x46cm-848344 (1)@2x.png" alt="" class="pop-art-love">
+            </div>
+        </div>
+    </section>
 
 </body>
 

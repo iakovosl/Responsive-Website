@@ -140,6 +140,25 @@ html {
 
 }
 
+/* -------------------------------------------------- */
+/* SECTION CONTACT FORM */
+/* -------------------------------------------------- */
+
+.map-screen{
+    position: relative;
+    left: -15px;
+    width: 105%;
+    height: 600px;
+    mix-blend-mode: multiply;
+    opacity: 1;
+}
+
+.form-control{
+    border: 1px solid #000000;
+    border-radius: 28px;
+}
+
+
 
 /* -------------------------------------------------- */
 /* RESPONSIVE*/

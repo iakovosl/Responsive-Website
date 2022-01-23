@@ -18,36 +18,18 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <div class="topnav" id="myTopnav">
             <img src="img/logo.svg" class="headlogo" />
-            <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><span class="spelling-nav">Main one</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Page two</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Page three</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Our Work</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+            <a href="#main_one" class="active" style="border-bottom: 8px solid #B4FF00; color:#B4FF00;">Main One</a>
+            <a href="#Page_two">Page two</a>
+            <a href="#page_threee">Page Three</a>
+            <a href="#about_us">About Us</a>
+            <a href="#our_work">Our Work</a>
+            <a href="#contact">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
 
         <!-- Carousel -->
         <div id="demo" class="carousel slide" data-ride="carousel">
@@ -95,7 +77,6 @@
             </div>
         </div>
     </div>
-
 
     <div class="container-fluid">
         <div class="row">
@@ -163,7 +144,17 @@
             </div>
         </div>
     </div>
-    
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
 </body>
 
 </html>

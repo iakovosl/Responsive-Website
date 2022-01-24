@@ -13,12 +13,12 @@ function myFunction() {
 //Needed validation rules
 //Only letters accepted
 
-let inputName = document.getElementById("usr");
+const inputName = document.getElementById("usr");
 const submitBtn = document.querySelector('input[type="submit"]');
 
 console.log (inputName, submitBtn);
 
-submitBtn.addEventListener("click", allLeters);
+submitBtn.addEventListener("click",allLeters);
 
 function allLeters(e){
     e.preventDefault();
@@ -56,7 +56,26 @@ function allLeters(e){
     }
 }
 
+//Needed validation rules phone numbers
 
 
+const inputPhone = document.getElementById("phone");
+const submitPhoneBtn = document.querySelector('input[type="submit"]');
+
+console.log (inputPhone, submitPhoneBtn);
+
+submitPhoneBtn.addEventListener("click",allLeters);
+
+function allLeters(e){
+    e.preventDefault();
+    var phonenumber = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+    
+    if (inputPhone.value.match(phonenumber)){
+        alert("Ok!Your phone number have accepted!");
+    }else{
+        alert("Please input only accepted characters! ");
+       
+    }
+}
 
 

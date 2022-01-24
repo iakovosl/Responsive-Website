@@ -59,7 +59,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-xl-6 col-lg-6 col-md-6">
-                <div class="app-screen"></div>
+                    <div class="app-screen"></div> 
             </div>
             <div class="col-xl-6 col-lg-6 col-md-6">
                 <div class="text-fluid">
@@ -86,8 +86,7 @@
                 <div class="pop-art-text">
                     <h5>Since the 1500s</h5>
                     <h6>The standard</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur </br> adipiscing elit, sed do eiusmod tempor incididunt
-                        </br> ut labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur </br> adipiscing elit, sed do eiusmod tempor incididunt </br> ut labore et dolore magna aliqua.</p>
                 </div>
             </div>
         </div>
@@ -95,8 +94,10 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-xl-7 col-lg-7 col-md-7 order-sm-12" style="border:1px solid #ddd">
-                <form>
+            <div class="col-xl-7 col-lg-7 col-md-7 order-sm-12" style="border:1px solid #ddd; background: #F8F8F8 0% 0% no-repeat padding-box;">
+                <form class="contact-form">
+                    <h4>Contact Us</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <div class="form-group">
                         <input type="text" class="form-control" id="usr" placeholder="Full Name">
                     </div>
@@ -111,7 +112,7 @@
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <select id="inputState" class="form-control">
-                                <option selected>Choose...</option>
+                                <option selected>Category</option>
                                 <option>Option</option>
                                 <option>Option</option>
                                 <option>Option</option>
@@ -119,7 +120,7 @@
                         </div>
                         <div class="form-group col-md-6">
                             <select id="inputState" class="form-control">
-                                <option selected>Choose...</option>
+                                <option selected>Subcategory</option>
                                 <option>Option</option>
                                 <option>Option</option>
                                 <option>Option</option>
@@ -127,13 +128,25 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="comment">Message:</label>
-                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                    
+                        <textarea class="form-control" rows="5" id="comment" placeholder="Message"></textarea>
                     </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    <p>Please select at least one of the following:</p>
+                    <div class="form-row" style="margin-left: 25px;">
+                       
+                        <div class="form-check col-md-6">
+                           
+                        <input type="checkbox" class="form-check-input" id="exampleCheck">
+                        <label class="form-check1-label" for="exampleCheck">Option 1</label>
+                        </div>
+                        <div class="form-check col-md-6">
+                           
+                        <input type="checkbox" class="form-check2-input" id="exampleCheck2">
+                        <label class="form-check2-label" for="exampleCheck2">Option 2</label>
+                        </div>
                     </div>
+                  
+                    
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
@@ -144,22 +157,25 @@
     </div>
 
     <!-- Footer -->
+ 
     <div class="container-fluid" style="background-color: black; color: aliceblue;">
 
         <div class="row">
-            <div class="col-md-4 col-sm-4"
+            <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4"
                 style="font: normal normal medium 16px/19px Montserrat; letter-spacing: 0px; color: #FFFFFF;opacity: 1; padding: 10px;">
                 © The standard Copywrite 2020
             </div>
-            <div class="col-md-4 d-none d-sm-block"
+            <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 d-none d-sm-block"
                 style="font: normal normal medium 16px/19px Montserrat; letter-spacing: 0px; color: #FFFFFF; opacity: 1; padding: 10px; text-align: center;">
                 Cookies. | Privacy.
             </div>
-            <div class="col-md-4 footer-image "></div>
+            <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4"> 
+                <img src="img/Group 1198.png" class="footer-image">
+            </div>
         </div>
     </div>
-    </div>
-    </footer>
+    
+  
 
     <script>
         function myFunction() {

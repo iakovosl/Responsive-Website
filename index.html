@@ -12,14 +12,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/queries.css">
     <title>Responsive website</title>
 </head>
 
 <body>
     <header>
         <div class="topnav" id="myTopnav">
-
+            
             <img src="img/logo.svg" class="headlogo" />
             <a href="#main_one" class="active" style="border-bottom: 8px solid #B4FF00; color:#B4FF00;">Main One</a>
             <a href="#Page_two">Page two</a>
@@ -99,11 +100,15 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-xl-7 col-lg-7 col-md-7 order-sm-12" style="border:1px solid #ddd; background: #F8F8F8 0% 0% no-repeat padding-box;">
-                <form class="contact-form">
+                <form action="#" class="contact-form">
                     <h4>Contact Us</h4>
+                 
+                       
+                       
+                   
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="usr" placeholder="Full Name">
+                        <input type="text" class="form-control" id="usr" placeholder="Full Name" pattern="[A-Z][a,z]" required>
                     </div>
                     <div class="form-group">
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
@@ -150,8 +155,8 @@
                         </div>
                     </div>
                   
-                    
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                   
+                    <input type="submit" class="btn btn-primary"/>Submit</button>
                 </form>
             </div>
             <div class="col-xl-5 col-lg-5 col-md-5  order-sm-1 " style="border:1px solid #ddd">
@@ -179,21 +184,7 @@
         </div>
     </div>
     
-  
-
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-
-        
-    </script>
-
+<script src="app.js"></script>  
 </body>
 
 </html>
